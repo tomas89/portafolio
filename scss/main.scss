@@ -1,0 +1,190 @@
+$peter-blue:#3498db;
+$blancoGrey:#ecf0f1;
+
+$lato:  'Lato', sans-serif;
+$roboto:  'Roboto', sans-serif;
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    opacity: 0.8;
+}
+
+
+.open{
+    transform: translateX(-50px);
+    background: transparent !important;
+    box-shadow: none;
+
+    &::before{
+        transform: rotate(45deg) translate(35px, -35px) !important;
+    }
+    &::after{
+        transform: rotate(-45deg) translate(35px, 35px) !important;
+    }
+}
+
+.cont-img{
+    background-image: url(../img/header.png);
+    width: 100%;
+    height: 619px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $lato;
+
+
+    .nav{
+    z-index: 200;
+    position: absolute;
+    top: 25px;
+    left: 90px;
+    font-size: 30px;
+    width: 194px;
+    background: darkcyan;
+    display: flex;
+    padding: 7px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .menu-btn{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        transition: all .7 ease-in-out;
+        border: 3px solid  aliceblue;
+
+        .menu_btn__burger{
+            width: 20px;
+            height: 3px;
+            background: aliceblue;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255,101,47,.2);
+            transition: all .5s ease-in-out;
+
+            &::before , &::after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 3px;
+                background: aliceblue;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(255,101,47,.2);
+                transition: all .5s ease-in-out;
+            }
+
+
+            &::before{
+                transform: translateY(-8px);
+            }
+            &::after{
+                transform: translateY(8px);
+            }
+            
+        }
+    }
+
+    p{
+        margin: 2px 15px;
+        font-size: 21px;
+        color: $blancoGrey;
+        font-size: 20px;
+    }
+
+    .subnav{
+
+        transition-property: background-color, color, left;
+        display: none;
+        transition: all .3 ease;
+       
+        ul{
+            justify-content: space-between;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                list-style: none;
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+                margin: 5px;
+                a{
+                    text-decoration: none;
+                    color: $blancoGrey;
+                    transition: all .9 ease;
+
+
+                    &:hover{
+                        color: $peter-blue;
+                        padding-left: 25px;
+                        
+                    }
+                }
+
+            }
+        }
+    }
+}
+    }
+
+    .row{
+
+        z-index: 100;
+       text-align: center;
+
+
+        h4{
+            color: $peter-blue;
+            font-size:  25px;
+        }
+
+        h1{
+            display: inline-grid;
+            font-size: 60px;
+            width: 60%;
+        }
+
+        h4,h1{
+            margin: 0;
+        }
+    
+        h1 , .skill, a {
+            color: $blancoGrey;
+        }
+
+        .skill{
+            border-bottom: 1px solid $blancoGrey;
+            width: 230px;
+            margin: auto;
+        }
+        .skill:hover{
+            border-bottom: 1px solid $peter-blue;
+        }
+
+        a{
+            margin: 39px 0px;
+            padding: 18px 0;
+            display: inline-block;
+            width: 231px;
+            border: 2px solid $blancoGrey;
+            text-decoration: none;
+        }
+
+        a:hover{
+            border: 1px solid $peter-blue;
+
+        }
+
+    }
+

@@ -1,0 +1,25 @@
+{
+  "name": "mi-web-personal",
+  "version": "1.0.0",
+  "description": "mi web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomas Buitrago",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomas89/web_design_project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tomas89/web_design_project/issues"
+  },
+  "homepage": "https://github.com/tomas89/web_design_project#readme"
+}
