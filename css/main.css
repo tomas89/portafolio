@@ -186,7 +186,8 @@ body {
   .other-main .skills .item {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     .other-main .skills .item progress {
       border: none;
       border-radius: 2rem;
